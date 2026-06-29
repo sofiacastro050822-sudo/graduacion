@@ -309,21 +309,31 @@
             <p style="font-size: 0.85rem; color: #555; margin-top: 5px;">De pies a cabeza, saca tu lado más elegante.</p>
         </div>
 
-        <section class="rsvp-container">
+       <section class="rsvp-container">
             <h2>Confirmar Asistencia</h2>
-            <form id="rsvpForm">
+            <form action="https://formsubmit.co/sofiacastro050822@gmail.com" method="POST">
+                
+                <input type="hidden" name="_next" value="https://sofiacastro050822-sudo.github.io/graduacion/">
+                <input type="hidden" name="_subject" value="¡Nueva confirmación de graduación!">
+                <input type="hidden" name="_captcha" value="false">
+
                 <div class="form-group">
                     <label for="name">Tu Nombre</label>
-                    <input type="text" id="name" required placeholder="Ej. Sofia Rodriguez">
+                    <input type="text" name="Nombre del Invitado" required placeholder="Ej. Sofia Rodriguez">
                 </div>
 
                 <div class="form-group">
                     <label for="attendance">¿Contamos contigo?</label>
-                    <select id="attendance" required>
+                    <select name="¿Asistirá?" required>
                         <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="si">Confirmadísimo, ¡ahí estaré! 🪩</option>
-                        <option value="no">No podré asistir</option>
+                        <option value="Confirmado (SÍ)">Confirmadísimo, ¡ahí estaré! 🪩</option>
+                        <option value="Cancelado (NO)">No podré asistir</option>
                     </select>
+                </div>
+
+                <button type="submit" class="btn-black">Enviar Confirmación</button>
+            </form>
+        </section>
                 </div>
 
                 <button type="submit" class="btn-black">Enviar Confirmación</button>
@@ -337,16 +347,7 @@
 
     <script>
         document.getElementById('rsvpForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const name = document.getElementById('name').value;
-            const attendance = document.getElementById('attendance').value;
-
-            if(attendance === 'si') {
-                alert(`¡Es todo, ${name}! Tu lugar está más que apartado para celebrar.`);
-            } else {
-                alert(`¡Te extrañaremos un montón, ${name}! Gracias por avisar.`);
-            }
-            this.reset();
+            ...
         });
     </script>
 </body>
