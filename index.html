@@ -9,6 +9,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
     
     <style>
+
+        /* --- CAJA DE REGALOS Y DATOS BANCARIOS --- */
+        .bank-box {
+            background: #ffffff;
+            border: 2px solid var(--negro-coquette);
+            padding: 35px 20px;
+            margin: 30px 0;
+            box-shadow: 7px 7px 0px var(--rosa-glitter); /* Sombra rosa estilo coquette/glam */
+            position: relative;
+            text-align: center;
+        }
+
+        .bank-title {
+            font-family: var(--fuente-vintage);
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .bank-details {
+            background-color: var(--papel-fondo);
+            border: 1px dashed var(--negro-coquette);
+            padding: 15px;
+            margin-top: 15px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .bank-details p {
+            margin-bottom: 8px;
+        }
+        
+        .bank-details p:last-child {
+            margin-bottom: 0;
+        }
         /* --- VARIABLES DE COLOR Y FUENTES --- */
         :root {
             --negro-coquette: #111111;
@@ -302,7 +338,22 @@
             ¡lo logramos!
             <span class="funny-sub">El éxito es más bonito cuando se comparte en familia.</span>
         </div>
-
+<div class="bank-box">
+            <p class="bank-title">✨ Pases y Detalles</p>
+            <p style="font-size: 1.1rem; font-weight: 700; margin-bottom: 5px;">¡Prepara el outfit! 👗🖤</p>
+            <p style="font-size: 0.95rem; color: #444; padding: 0 10px;">
+                El costo por pase es de <strong>$950 pesos</strong>. ¡Muchas gracias por acompañarme y ser parte de este gran logro! 🤍
+            </p>
+            
+            <div class="bank-details">
+                <p><strong>Beneficiario:</strong> Sofia Victoria Rodríguez Castro</p>
+                <p><strong>Banco:</strong> Nu México</p>
+                <p><strong>CLABE:</strong> <code style="font-family: monospace; background: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem;">638180010141195428</code></p>
+            </div>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 15px; font-style: italic;">
+                *Por favor, envíame tu comprobante al confirmar tu asistencia.
+            </p>
+        </div>
         <div class="dress-code-section">
             <p class="dress-title">✨ Dress Code</p>
             <p class="dress-type">GALA / FORMAL</p>
