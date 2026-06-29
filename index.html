@@ -26,19 +26,18 @@
             box-sizing: border-box;
         }
 
-        body {
-            font-family: var(--fuente-sans);
-            color: var(--negro-coquette);
-            
-            /* CONFIGURACIÓN PARA IMAGEN DE FONDO */
-            background-image: url('fondo2.jpg'); 
-            background-size: cover;         /* Hace que la imagen cubra toda la pantalla */
-            background-position: center;    /* Centra la imagen */
-            background-attachment: fixed;   /* El fondo se queda fijo mientras deslizas la página */
-            
-            line-height: 1.6;
-            text-align: center;
-            overflow-x: hidden;
+       /* --- CONFIGURACIÓN PARA QUE EL VIDEO SEA EL FONDO EN LOOP --- */
+        .video-background {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100; /* Lo envía detrás de todas las letras y cajas */
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover; /* Evita que el video se deforme en pantallas estiradas */
         }
 
         .container {
@@ -271,7 +270,7 @@
                    
             </div>
             
-            <div class="script-title">2022-2026</div>
+            <div class="poppins bold">2022-2026</div>
         </header>
 
         <div class="details-box">
